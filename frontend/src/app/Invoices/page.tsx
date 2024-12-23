@@ -66,7 +66,7 @@ const InvoiceForm = () => {
     try {
       console.log(invoiceForm)
 
-      const response = await fetch('api/invoiceData', {
+      const response = await fetch('http://localhost:5000/api/invoices', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
